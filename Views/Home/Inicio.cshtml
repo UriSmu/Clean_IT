@@ -1,0 +1,14 @@
+@model Usuarios
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="welcome-container">
+    <h2 class="welcome-title">Bienvenido, @Model.Username</h2>
+    
+    <p class="user-info">Nombre: @Model.Nombre</p>
+    <p class="user-info">Apellido: @Model.Apellido</p>
+    <p class="user-info">Email: @Model.Email</p>
+    <p class="user-info">Teléfono: @Model.Telefono</p>
+    <p class="user-info">Documento: @Model.Documento</p>
+</div>

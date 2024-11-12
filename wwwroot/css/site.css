@@ -1,23 +1,111 @@
-html {
-  font-size: 14px;
-  min-height: 100%;
+.container-fluid{
+  background-color: #00b2ff;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+.navbar-brand{
+  width: 10%;
+  height: auto;
+}
+
+.logo-header{
+  width: 100%;
+  height: auto;
 }
 
 body {
-  margin: 10px;
-  padding: 10px;
+  background-color: #00b2ff;
+  font-family: Arial, sans-serif;
+  color: #FFFFFF;
 }
 
+h1, h2 {
+  color: #FFFFFF;
+  text-align: center;
+}
 
-footer {
+.auth-container, .welcome-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: #00b2ff;
+}
+
+/* Formulario */
+label {
+  display: block;
   margin-top: 10px;
+  color: #00b2ff;
+}
+
+.input-field,
+select,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
   padding: 10px;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e9ecef;
+  margin-top: 5px;
+  border: 1px solid #00b2ff;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  color: #00b2ff;
+}
+
+button.btn-primary, .index-button, button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #FFFFFF;
+  color: #00b2ff;
+  border: 1px solid #00b2ff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
+  background-color: #00b2ff;
+  color: #FFFFFF;
+}
+
+.secondary-link {
+  color: #FFFFFF;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.error-message {
+  color: #FF0000;
+  text-align: center;
+}
+
+.index-title, .index-subtitle {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.landing-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.landing-buttons .index-button {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  color: #00b2ff;
+  text-decoration: none;
+  border: none;
+}
+
+.landing-buttons .index-button:hover {
+  background-color: #00b2ff;
+  color: #FFFFFF;
 }

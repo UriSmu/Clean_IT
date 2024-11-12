@@ -77,7 +77,8 @@ public static int InsertarUsuario(string usuario, string nombre, string apellido
             esRespuestaCorrecta = db.QueryFirstOrDefault<int>(sqlVerificarRespuesta, new
             {
                 pInicio = inicio,
-                pRespuestaSeguridad = respuestaSeguridad
+                pRespuestaSeguridad = respuestaSeguridad,
+                pNuevaContrasenia = nuevaContraseña
             }) == 1;
         }
 

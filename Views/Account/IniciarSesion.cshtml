@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Iniciar Sesion";
+}
+
+<div class="auth-container">
+    <h2>Iniciar Sesión</h2>
+
+    <form action='@Url.ActionLink("IniciarSesion", "Account")' method="post">
+        <label for="inicio">Nombre de usuario o Email:</label>
+        <input type="text" id="inicio" name="inicio" class="input-field" required />
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" class="input-field" required />
+
+        <button type="submit" class="btn-primary">Iniciar Sesión</button>      
+    </form>
+    <form action='@Url.Action("OlvideMiContraseña", "Account")' method="get" style="text-align: center;">
+        <button type="submit" class="secondary-link">Olvidé Mi Contraseña</button>
+    </form>  
+
+    @if (ViewBag.MensajeError != null)
+    {
+        <p class="error-message">@ViewBag.MensajeError</p>
+    }
+</div>

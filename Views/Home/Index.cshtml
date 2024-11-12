@@ -2,7 +2,14 @@
     ViewData["Title"] = "Index";
 }
 
-<div>
-    <h1>Index</h1>
-    <p>Bienvenidos al sitio web de NombreProyecto</p>
+<h1 class="index-title">Bienvenido a Clean IT</h1>
+<p class="index-subtitle">Tu plataforma de limpieza.</p>
+
+<div class="landing-buttons">
+    <form action='@Url.Action("Registrar", "Account")' method="get" style="display: inline;">
+        <button type="submit" class="index-button">Regístrate</button>
+    </form>
+    <form action='@Url.Action("IniciarSesion", "Account")' method="get" style="display: inline;">
+        <button type="submit" class="index-button">Iniciar Sesión</button>
+    </form>
 </div>
