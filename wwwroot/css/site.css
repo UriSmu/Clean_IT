@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'NexaExtraLight';
+  src: url('../font/Nexa-ExtraLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NexaHeavy';
+  src: url('../font/Nexa-Heavy.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GillSansMT';
+  src: url('../font/gillsansmt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  background-color: #FFFFFF;
+  font-family: 'NexaHeavy', sans-serif;
+  color: #00b2ff;
+}
+
 .container-fluid{
   background-color: #00b2ff;
 }
@@ -12,14 +40,13 @@
   height: auto;
 }
 
-body {
-  background-color: #00b2ff;
-  font-family: Arial, sans-serif;
-  color: #FFFFFF;
+h1, h2 {
+  color: #00b2ff;
+  text-align: center;
 }
 
-h1, h2 {
-  color: #FFFFFF;
+.index-subtitle, .index-title {
+  color: #00b2ff;
   text-align: center;
 }
 
@@ -86,7 +113,7 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 
 .index-title, .index-subtitle {
   text-align: center;
-  color: #FFFFFF;
+  color: #00b2ff;
 }
 
 .landing-buttons {
