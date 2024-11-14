@@ -1,25 +1,135 @@
+@font-face {
+  font-family: 'NexaExtraLight';
+  src: url('../font/Nexa-ExtraLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NexaHeavy';
+  src: url('../font/Nexa-Heavy.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GillSansMT';
+  src: url('../font/gillsansmt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  background-color: #FFFFFF;
+  font-family: 'NexaHeavy', sans-serif;
+  color: #00b2ff;
+}
+
 .container-fluid{
   background-color: #00b2ff;
 }
 
-.navbar-brand{
-  width: 10%;
-  height: auto;
+.navbar {
+  background-color: #f8f9fa;
+  padding: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo-header{
+
+.navbar-brand {
+  width: 100px;
+}
+
+.logo-header {
   width: 100%;
   height: auto;
 }
 
-body {
-  background-color: #00b2ff;
-  font-family: Arial, sans-serif;
-  color: #FFFFFF;
+
+.navbar-nav .nav-item {
+  margin-right: 25px;
+   
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+
+.d-flex.ms-auto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+  .form-control {
+    width: 200px;
+  }
+
+.btn-outline-success {
+  color: #28a745;
+  border-color: #28a745;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+
+
+
+
+.logo-user-header, .logo-notis-header {
+  width: 25px;
+  height: auto;
+}
+
+.navbar-nav .nav-item img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+
+
+
+
+@media (max-width: 767px) {
+  .form-control {
+      width: 150px;
+  }
+  
+  .navbar-nav .nav-item {
+      margin-right: 10px;
+  }
+
+  .navbar-brand {
+      width: 70px;
+  }
 }
 
 h1, h2 {
-  color: #FFFFFF;
+  color: #00b2ff;
+  text-align: center;
+}
+
+.index-subtitle, .index-title {
+  color: #00b2ff;
+  color: #00b2ff;
+  text-align: center;
+}
+
+.index-subtitle, .index-title {
+  color: #00b2ff;
   text-align: center;
 }
 
@@ -32,6 +142,10 @@ h1, h2 {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   color: #00b2ff;
 }
+
+
+
+
 
 label {
   display: block;
@@ -85,7 +199,8 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 
 .index-title, .index-subtitle {
   text-align: center;
-  color: #FFFFFF;
+  color: #00b2ff;
+  color: #00b2ff;
 }
 
 .landing-buttons {
@@ -107,4 +222,344 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 .landing-buttons .index-button:hover {
   background-color: #00b2ff;
   color: #FFFFFF;
+}
+
+.contenedor-login .card {
+  width: 100%; 
+  max-height: 400px; 
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.contenedor-login .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.contenedor-login .card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.contenedor-login .card-title,
+.contenedor-login .card-text {
+  color: #fff;
+}
+
+.contenedor-login .landing-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contenedor-login .landing-buttons .separador {
+  margin: 0;
+}
+
+.contenedor-login .index-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contenedor-login .index-button:hover {
+  background-color: #0056b3;
+}
+
+.card-servicio {
+  display: flex;
+  background-color: #00AEEF;
+  border-radius: 15px;
+  padding: 50px; /* Aumenta el padding para agrandar las cards */
+  align-items: center;
+  gap: 20px;
+  margin: 2%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.card-servicio img {
+  width: 25%; /* Aumenta el ancho de la imagen dentro de la card */
+  height: 30%;/* Aumenta la altura de la imagen */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-servicio .card-content {
+  flex: 1;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+}
+
+.card-servicio .card-title-servicio {
+  font-size: 2em; /* Aumenta el tamaño del título */
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.card-servicio .card-text-servicio {
+  margin: 0 0 15px;
+  font-size: 1.2em; /* Aumenta el tamaño del texto */
+  line-height: 1.6;
+}
+
+.card-servicio .card-button-servicio {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 15px 30px; /* Aumenta el tamaño del botón */
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card-servicio .card-button-servicio:hover {
+  background-color: #fff;
+  color: #00AEEF;
+}
+
+.card-title-servicio {
+  color: #FFFFFF;
+}
+
+
+.contacto-header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.contacto-header-img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.contacto-titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+.contacto-formulario {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contacto-formulario h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.contacto-formulario label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: left;
+  color: #333333;
+}
+
+.contacto-formulario input[type="text"],
+.contacto-formulario select,
+.contacto-formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #e0f7fa;
+  font-size: 1em;
+}
+
+.contacto-formulario textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.contacto-boton {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.contacto-boton:hover {
+  background-color: #0056b3;
+}
+
+.contacto-redes {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; 
+  color: #333333;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacto-redes h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contacto-redes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacto-redes li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contacto-redes img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.contacto-logo-escoba {
+  width: 150px; 
+  height: auto;
+  margin-left: 20px;
+}
+
+
+
+
+
+
+.footer {
+  background-color: #00b2ff; 
+  color: white;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.footer-logo {
+  font-weight: 500;
+}
+
+.logo-footer {
+  width: 40px; 
+  height: auto;
+  margin-right: 10px;
+}
+
+.footer-rights {
+  font-size: 0.9rem;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+}
+
+.footer-item {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-item .icon {
+  width: 24px; 
+  height: auto;
+  margin-right: 5px;
+}
+
+.footer-item span {
+  font-size: 0.9rem; 
+}
+
+.footer-item:hover {
+  color: #f0f0f0; 
+}
+
+@media (max-width: 767px) {
+  .footer {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-logo, .footer-text, .footer-social {
+      margin-bottom: 10px;
+  }
+}
+
+
+.contenedor-confirmacion {
+  text-align: center;
+  color: #333333;
+  margin: auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.contenedor-confirmacion h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.contenedor-confirmacion .resaltado {
+  color: #0073ff; 
+  font-weight: 700;
+}
+
+.contenedor-confirmacion .mensaje {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.5;
+  margin-top: 0;
 }

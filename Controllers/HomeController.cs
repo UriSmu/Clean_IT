@@ -25,4 +25,17 @@ public class HomeController : Controller
         return View(user);
     }
 
+    public IActionResult Contacto()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Contacto2(string nombre, string apellido, string servicio, string mensaje)
+    {
+        ViewBag.Nombre = nombre;
+        ViewBag.Servicio = servicio;
+        return View();
+    }
+
 }
