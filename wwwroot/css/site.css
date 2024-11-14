@@ -560,3 +560,92 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
   line-height: 1.5;
   margin-top: 0;
 }
+
+
+
+
+
+
+
+.cleaner-header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.cleaner-header-img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.cleaner-titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.card-cleaner {
+  display: flex;
+  background-color: #00AEEF;
+  border-radius: 15px;
+  padding: 20px;
+  align-items: center;
+  gap: 20px;
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+.card-cleaner img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-cleaner .card-content {
+  flex: 1;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+}
+
+.card-cleaner .card-title-cleaner {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.card-cleaner .card-text-cleaner {
+  margin: 0 0 15px;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.card-cleaner .card-button-cleaner {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card-cleaner .card-button-cleaner:hover {
+  background-color: #fff;
+  color: #00AEEF;
+}
+
+.card-title-cleaner {
+  color: #FFFFFF;
+}

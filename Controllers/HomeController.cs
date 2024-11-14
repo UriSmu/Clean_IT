@@ -38,4 +38,9 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Cleaner()
+    {
+        return View();
+    }
+
 }
