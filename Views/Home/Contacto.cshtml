@@ -10,7 +10,7 @@
 <div class="contacto-formulario">
     <h2>Contactános</h2>
     
-    <form>
+    <form action='@Url.ActionLink("Contacto2", "Home")' method="post">
         <label for="nombre">Nombre</label>
         <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
 
@@ -32,7 +32,6 @@
     </form>
 </div>
 
-<!-- Sección de redes y contacto -->
 <div class="contacto-redes">
     <h3>Redes y teléfono:</h3>
     <ul>

@@ -36,7 +36,7 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo del navbar */
+
 .navbar-brand {
   width: 80px;
 }
@@ -46,7 +46,7 @@ body {
   height: auto;
 }
 
-/* Menú de navegación */
+
 .navbar-nav .nav-item {
   margin-right: 15px;
 }
@@ -61,7 +61,7 @@ body {
   color: #007bff;
 }
 
-/* Contenedor de búsqueda e iconos alineado a la derecha */
+
 .d-flex.ms-auto {
   display: flex;
   align-items: center;
@@ -83,7 +83,10 @@ body {
   color: #fff;
 }
 
-/* Iconos de usuario y notificaciones */
+
+
+
+
 .logo-user-header, .logo-notis-header {
   width: 25px;
   height: auto;
@@ -95,7 +98,10 @@ body {
   vertical-align: middle;
 }
 
-/* Alineación y espaciado en pantallas pequeñas */
+
+
+
+
 @media (max-width: 767px) {
   .form-control {
       width: 150px;
@@ -130,7 +136,10 @@ h1, h2 {
   color: #00b2ff;
 }
 
-/* Formulario */
+
+
+
+
 label {
   display: block;
   margin-top: 10px;
@@ -208,8 +217,8 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 }
 
 .contenedor-login .card {
-  width: 100%; /* Ancho completo */
-  max-height: 400px; /* Ajusta el alto máximo */
+  width: 100%; 
+  max-height: 400px; 
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
@@ -220,7 +229,7 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  opacity: 0.3; /* Mayor opacidad en la imagen */
+  opacity: 0.3;
 }
 
 .contenedor-login .card-img-overlay {
@@ -274,8 +283,8 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 }
 
 .card-servicio img {
-  width: 250px; /* Aumenta el ancho de la imagen */
-  height: 250px; /* Aumenta la altura de la imagen */
+  width: 250px;
+  height: 250px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -286,8 +295,8 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Centra el contenido horizontalmente */
-  text-align: center; /* Centra el texto */
+  align-items: center; 
+  text-align: center;
 }
 
 .card-servicio .card-title-servicio {
@@ -345,7 +354,11 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
   color: #FFFFFF;
 }
 
-/* Formulario de contacto */
+
+
+
+
+
 .contacto-formulario {
   max-width: 600px;
   margin: 20px auto;
@@ -412,7 +425,7 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative; /* Para posicionar el logo de la escoba */
+  position: relative; 
   color: #333333;
   font-size: 1.1em;
   display: flex;
@@ -444,7 +457,7 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 }
 
 .contacto-logo-escoba {
-  width: 150px; /* Tamaño más grande */
+  width: 150px; 
   height: auto;
   margin-left: 20px;
 }
@@ -452,21 +465,22 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 
 
 
+
+
 .footer {
-  background-color: #00b2ff; /* Color de fondo correcto */
+  background-color: #00b2ff; 
   color: white;
   padding: 10px 0;
   font-size: 0.9rem;
   text-align: center;
 }
 
-/* Logo de la escoba y derechos reservados */
 .footer-logo {
   font-weight: 500;
 }
 
 .logo-footer {
-  width: 40px; /* Tamaño aumentado */
+  width: 40px; 
   height: auto;
   margin-right: 10px;
 }
@@ -475,7 +489,6 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
   font-size: 0.9rem;
 }
 
-/* Redes sociales y contacto */
 .footer-social {
   display: flex;
   align-items: center;
@@ -489,20 +502,19 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 }
 
 .footer-item .icon {
-  width: 24px; /* Tamaño adecuado para los iconos */
+  width: 24px; 
   height: auto;
   margin-right: 5px;
 }
 
 .footer-item span {
-  font-size: 0.9rem; /* Tamaño de texto similar al icono */
+  font-size: 0.9rem; 
 }
 
 .footer-item:hover {
-  color: #f0f0f0; /* Efecto de color al pasar el mouse */
+  color: #f0f0f0; 
 }
 
-/* Espaciado y alineación en pantallas pequeñas */
 @media (max-width: 767px) {
   .footer {
       flex-direction: column;
@@ -512,4 +524,32 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
   .footer-logo, .footer-text, .footer-social {
       margin-bottom: 10px;
   }
+}
+
+
+.contenedor-confirmacion {
+  text-align: center;
+  color: #333333;
+  margin: auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.contenedor-confirmacion h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.contenedor-confirmacion .resaltado {
+  color: #0073ff; 
+  font-weight: 700;
+}
+
+.contenedor-confirmacion .mensaje {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.5;
+  margin-top: 0;
 }
