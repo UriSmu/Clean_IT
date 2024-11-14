@@ -2,14 +2,47 @@
     ViewData["Title"] = "Index";
 }
 
-<h1 class="index-title">Bienvenido a Clean IT</h1>
-<p class="index-subtitle">Tu plataforma de limpieza.</p>
-
-<div class="landing-buttons">
-    <form action='@Url.Action("Registrar", "Account")' method="get" style="display: inline;">
-        <button type="submit" class="index-button">Regístrate</button>
-    </form>
-    <form action='@Url.Action("IniciarSesion", "Account")' method="get" style="display: inline;">
-        <button type="submit" class="index-button">Iniciar Sesión</button>
-    </form>
+<div class="contenedor-login">
+  <div class="card text-bg-dark">
+    <img src="..\img\Fondo_index.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h2 class="card-title">Bienvenido a Clean IT</h2>
+      <p class="card-text">Tu plataforma de limpieza.</p>
+      <div class="landing-buttons">
+          <form action='@Url.Action("Registrar", "Account")' method="get" style="display: inline;">
+              <button type="submit" class="index-button">Regístrate</button>
+          </form>
+          <p class="card-text separador">o</p>
+          <form action='@Url.Action("IniciarSesion", "Account")' method="get" style="display: inline;">
+              <button type="submit" class="index-button">Iniciar Sesión</button>
+          </form>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="card-servicio">
+    <img src="..\img\Imagen_Nuestros_Servicios.jpg" class="card-img-servicio" alt="Servicios">
+    <div class="card-content">
+      <h2 class="card-title-servicio">Servicios</h2>
+      <p class="card-text-servicio">
+        En Clean IT ofrecemos muchos servicios de limpieza, de distintos tipos y calidades de servicio.
+        Descubrí todas nuestras propuestas de servicio ahora, registrate, pedí tu Cleaner, y disfrutá de nuestra app.
+        <strong>¡Hacé click ahora!</strong>
+      </p>
+      <button class="card-button-servicio">NUESTROS SERVICIOS</button>
+    </div>
+  </div>
+
+  <div class="card-servicio">
+    <div class="card-content">
+      <h2 class="card-title-servicio">¿Quiénes Somos?</h2>
+      <p class="card-text-servicio">
+        Somos Clean IT, una Start up creada por 5 amigos de la escuela ORT, en la especialidad informática.
+        Desarrollamos esto con mucha pasión.
+        Te invitamos a conocer más sobre nosotros haciendo click en el botón de abajo.
+      </p>
+      <button class="card-button-servicio">QUIENES SOMOS</button>
+    </div>
+    <img src="..\img\Imagen_Quienes_Somos.jpg" class="card-img-servicio" alt="Quiénes Somos">
+  </div>

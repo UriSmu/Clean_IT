@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "Contacto";
+}
+
+<div class="contacto-header">
+    <img src="..\img\Imagen_Contacto.jpg" alt="Imagen de Contacto" class="contacto-header-img">
+    <h1 class="contacto-titulo">CONTACTO</h1>
+</div>
+
+<div class="contacto-formulario">
+    <h2>Contactános</h2>
+    
+    <form action='@Url.ActionLink("Contacto2", "Home")' method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido">
+
+        <label for="servicio">Servicio a consultar</label>
+        <select id="servicio" name="servicio">
+            <option value="" disabled selected>Seleccione el servicio</option>
+            <option value="limpieza">Limpieza</option>
+            <option value="mantenimiento">Mantenimiento</option>
+            <option value="consultoria">Consultoría</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Ingrese su mensaje (opcional)"></textarea>
+
+        <button type="submit" class="contacto-boton">ENVIAR CONSULTA</button>
+    </form>
+</div>
+
+<div class="contacto-redes">
+    <h3>Redes y teléfono:</h3>
+    <ul>
+        <li><img src="..\img\Logo_Gmail.png" alt="Gmail"> CleanIT@gmail.com</li>
+        <li><img src="..\img\Logo_Telefono.png" alt="Teléfono"> +549 11 1234-5678</li>
+        <li><img src="..\img\Logo_Instagram.png" alt="Instagram"> @@CleanIT_</li>
+        <li><img src="..\img\Logo_Twitter.png" alt="X"> @@CleanIT_</li>
+    </ul>
+    <img src="..\img\Logo_Escoba.png" alt="Logo Escoba" class="contacto-logo-escoba">
+</div>
