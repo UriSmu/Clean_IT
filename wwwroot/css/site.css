@@ -48,7 +48,7 @@ body {
 
 
 .navbar-nav .nav-item {
-  margin-right: 25px;
+  margin-right: 35px;
    
 }
 
@@ -263,6 +263,17 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 .contenedor-login .landing-buttons .separador {
   margin: 0;
 }
+.separador{
+  margin-left: 5%;
+  text-align: center;
+  display:flex;
+}
+.separadora{
+  margin-left: 5%;
+  display:flex;
+  text-align: center;
+  margin-top: 4%;
+}
 
 .contenedor-login .index-button {
   background-color: #007bff;
@@ -292,8 +303,8 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 }
 
 .card-servicio img {
-  width: 25%; /* Aumenta el ancho de la imagen dentro de la card */
-  height: 30%;/* Aumenta la altura de la imagen */
+  width: 30%; /* Aumenta el ancho de la imagen dentro de la card */
+  height: 35%;/* Aumenta la altura de la imagen */
   border-radius: 10px;
   object-fit: cover;
 }
@@ -313,10 +324,12 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
   font-weight: bold;
   margin: 0 0 10px;
 }
-
+.card-title-cleaner{
+  font-size: 3.1em;
+}
 .card-servicio .card-text-servicio {
   margin: 0 0 15px;
-  font-size: 1.2em; /* Aumenta el tamaño del texto */
+  font-size: 1.5em; /* Aumenta el tamaño del texto */
   line-height: 1.6;
 }
 
@@ -330,7 +343,8 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-}
+  margin-top: 5%;
+  }
 
 .card-servicio .card-button-servicio:hover {
   background-color: #fff;
@@ -339,6 +353,7 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 
 .card-title-servicio {
   color: #FFFFFF;
+  
 }
 
 
@@ -596,16 +611,17 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
   display: flex;
   background-color: #00AEEF;
   border-radius: 15px;
-  padding: 20px;
+  padding: 50px; /* Aumenta el padding para agrandar las cards */
   align-items: center;
   gap: 20px;
-  max-width: 100%;
-  margin: 20px 0;
+  margin: 2%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .card-cleaner img {
-  width: 250px;
-  height: 250px;
+  width: 30%; /* Aumenta el ancho de la imagen dentro de la card */
+  height: 35%;/* Aumenta la altura de la imagen */
   border-radius: 10px;
   object-fit: cover;
 }
@@ -621,27 +637,28 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 }
 
 .card-cleaner .card-title-cleaner {
-  font-size: 1.8em;
+  font-size:x-large;
   font-weight: bold;
   margin: 0 0 10px;
 }
 
 .card-cleaner .card-text-cleaner {
   margin: 0 0 15px;
-  font-size: 1.1em;
-  line-height: 1.5;
+  font-size: 1.5em; /* Aumenta el tamaño del texto */
+  line-height: 1.6;
 }
 
 .card-cleaner .card-button-cleaner {
   background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
-  padding: 10px 20px;
-  font-size: 1em;
+  padding: 15px 30px; /* Aumenta el tamaño del botón */
+  font-size: 1.1em;
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  margin-top: 5%;
 }
 
 .card-cleaner .card-button-cleaner:hover {
@@ -651,4 +668,15 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 
 .card-title-cleaner {
   color: #FFFFFF;
+}
+/* Estilos para compactar el formulario de búsqueda */
+.navbar .form-control {
+  max-width: 150px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.navbar .btn-outline-success {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
 }
