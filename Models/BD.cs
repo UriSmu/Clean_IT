@@ -28,7 +28,7 @@ public static int InsertarUsuario(string usuario, string nombre, string apellido
         });
     }
     return resultado;
-}
+} 
 
     public static int IniciarSesion(string inicio, string contraseña)
     {
