@@ -25,4 +25,9 @@ public class HomeController : Controller
         return View(user);
     }
 
+    public IActionResult Contacto()
+    {
+        return View();
+    }
+
 }
