@@ -24,19 +24,26 @@ body {
   background-color: #FFFFFF;
   font-family: 'NexaHeavy', sans-serif;
   color: #00b2ff;
+  
 }
 
 .container-fluid{
   background-color: #00b2ff;
+
 }
 
 .navbar {
   background-color: #f8f9fa;
-  padding: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1%;
+  
 }
 
-
+header {
+  margin: 0;
+  padding: 0;
+  width: 100vw; /* Asegura que el header ocupe el ancho completo */
+}
 .navbar-brand {
   width: 100px;
 }
@@ -303,13 +310,8 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 }
 
 .card-servicio img {
-<<<<<<< HEAD
   width: 30%; /* Aumenta el ancho de la imagen dentro de la card */
   height: 35%;/* Aumenta la altura de la imagen */
-=======
-  width: 25%; 
-  height: 30%;
->>>>>>> 66bcdb05f45b6432e77c17b12048da149b01dcd8
   border-radius: 10px;
   object-fit: cover;
 }
@@ -334,11 +336,7 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 }
 .card-servicio .card-text-servicio {
   margin: 0 0 15px;
-<<<<<<< HEAD
-  font-size: 1.5em; /* Aumenta el tamaño del texto */
-=======
   font-size: 1.2em; 
->>>>>>> 66bcdb05f45b6432e77c17b12048da149b01dcd8
   line-height: 1.6;
 }
 
@@ -469,7 +467,9 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 
 .contacto-redes h3 {
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-left: 4%;
+
 }
 
 .contacto-redes ul {
@@ -482,18 +482,26 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  margin-left: 15%;
 }
 
 .contacto-redes img {
   width: 24px;
   height: 24px;
   margin-right: 10px;
+  margin-left: 12%;
+
 }
 
 .contacto-logo-escoba {
   width: 150px; 
   height: auto;
   margin-left: 20px;
+}
+.logoescobacontacto img{
+  width: 80%;
+  height: auto;
+  margin-left: 25%;
 }
 
 
