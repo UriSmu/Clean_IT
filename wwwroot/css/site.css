@@ -303,13 +303,7 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 }
 
 .card-servicio img {
-<<<<<<< HEAD
-  width: 30%; /* Aumenta el ancho de la imagen dentro de la card */
-  height: 35%;/* Aumenta la altura de la imagen */
-=======
-  width: 25%; 
-  height: 30%;
->>>>>>> 66bcdb05f45b6432e77c17b12048da149b01dcd8
+  width: 30%; 
   border-radius: 10px;
   object-fit: cover;
 }
@@ -334,11 +328,7 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 }
 .card-servicio .card-text-servicio {
   margin: 0 0 15px;
-<<<<<<< HEAD
-  font-size: 1.5em; /* Aumenta el tamaño del texto */
-=======
-  font-size: 1.2em; 
->>>>>>> 66bcdb05f45b6432e77c17b12048da149b01dcd8
+  font-size: 1.5em;
   line-height: 1.6;
 }
 
@@ -620,7 +610,7 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
   display: flex;
   background-color: #00AEEF;
   border-radius: 15px;
-  padding: 50px; /* Aumenta el padding para agrandar las cards */
+  padding: 50px; 
   align-items: center;
   gap: 20px;
   margin: 2%;
@@ -629,8 +619,8 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 }
 
 .card-cleaner img {
-  width: 30%; /* Aumenta el ancho de la imagen dentro de la card */
-  height: 35%;/* Aumenta la altura de la imagen */
+  width: 30%; 
+  height: 35%;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -653,7 +643,7 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 
 .card-cleaner .card-text-cleaner {
   margin: 0 0 15px;
-  font-size: 1.5em; /* Aumenta el tamaño del texto */
+  font-size: 1.5em;
   line-height: 1.6;
 }
 
@@ -661,7 +651,7 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
   background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
-  padding: 15px 30px; /* Aumenta el tamaño del botón */
+  padding: 15px 30px; 
   font-size: 1.1em;
   font-weight: bold;
   border-radius: 5px;
@@ -678,7 +668,6 @@ button.btn-primary:hover, .index-button:hover, button[type="submit"]:hover {
 .card-title-cleaner {
   color: #FFFFFF;
 }
-/* Estilos para compactar el formulario de búsqueda */
 .navbar .form-control {
   max-width: 150px;
   padding: 0.25rem 0.5rem;
