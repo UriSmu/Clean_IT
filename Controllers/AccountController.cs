@@ -1,16 +1,18 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Clean_IT.Models;
-
+using Microsoft.AspNetCore.Http;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
 namespace Clean_IT.Controllers;
 
-public class Account : Controller
+public class AccountController : Controller
 {
-    private readonly ILogger<Account> _logger;
+    private IWebHostEnvironment Environment;
 
-    public Account(ILogger<Account> logger)
+    public AccountController(IWebHostEnvironment environment)
     {
-        _logger = logger;
+        Environment = environment;
     }
 
 
@@ -23,9 +25,24 @@ public class Account : Controller
     }
 
     [HttpPost]
-    public IActionResult Registrar(string username, string nombre, string apellido, string email, string telefono, string documento, string contraseña, int idPregunta, string respuestaSeguridad)
+    public IActionResult Registrar(Usuario user, IFormFile foto, int idPregunta, string respuestaSeguridad)
     {
-        int resultado = BD.InsertarUsuario(username, nombre, apellido, email, telefono, documento, contraseña, idPregunta, respuestaSeguridad);
+        if (foto != null)
+        {
+            if (foto.Length > 0)
+            {
+                user.Foto = foto.FileName;
+                string Ubicacion = this.Environment.ContentRootPath + @"\wwwroot\imgUsers\" + foto.FileName;
+                using (var stream = System.IO.File.Create(Ubicacion))
+                {
+                    foto.CopyToAsync(stream);
+                }
+
+            }
+
+        }
+
+        int resultado = BD.InsertarUsuario(user, idPregunta, respuestaSeguridad);
 
         if (resultado == 1)
         {
@@ -54,7 +71,9 @@ public class Account : Controller
 
         if (resultado == 1)
         {
-            return RedirectToAction("Inicio", "Home", new {inicio = inicio,  pass = contraseña});
+            Usuario user = BD.ObtenerDatosUsuario(inicio);
+            HttpContext.Session.SetString("user", user.ToString());
+            return RedirectToAction("Inicio", "Home");
         }
         else
         {

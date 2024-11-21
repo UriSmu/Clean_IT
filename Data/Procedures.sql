@@ -1,4 +1,4 @@
-CREATE PROCEDURE InsertarUsuario (
+ALTER PROCEDURE InsertarUsuario (
 @pEmail VARCHAR(255),
 @pUsuario VARCHAR(255),
 @pNombre VARCHAR(255),
@@ -7,15 +7,16 @@ CREATE PROCEDURE InsertarUsuario (
 @pDocumento VARCHAR(255),
 @pContrasenia VARCHAR(255),
 @pIdPregunta INT,
-@pRespuestaSeguridad VARCHAR(255)
+@pRespuestaSeguridad VARCHAR(255),
+@pFoto VARCHAR(250)
 )
 AS
 BEGIN
 	IF (SELECT COUNT(1) FROM Usuarios WHERE Email = @pEmail or Telefono = @pTelefono) = 0
 	BEGIN
 		DECLARE @UserId INT;
-		INSERT INTO Usuarios (Username, Nombre, Apellido, Email, Telefono, Documento, Contrasenia)
-		VALUES (@pUsuario, @pNombre, @pApellido, @pEmail, @pTelefono, @pDocumento, @pContrasenia);
+		INSERT INTO Usuarios (Username, Nombre, Apellido, Email, Telefono, Documento, Contrasenia, Foto)
+		VALUES (@pUsuario, @pNombre, @pApellido, @pEmail, @pTelefono, @pDocumento, @pContrasenia, @pFoto);
 
 		SET @UserId = SCOPE_IDENTITY();
 
@@ -97,7 +98,7 @@ ALTER PROCEDURE ObtenerDatosUsuario(
 )
 AS
 BEGIN
-	SELECT Username, Nombre, Apellido, Email, Telefono, Documento 
+	SELECT *
     FROM Usuarios
     WHERE Email = @pInicio OR Username = @pInicio OR Telefono = @pInicio
 END;

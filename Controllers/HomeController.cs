@@ -18,10 +18,9 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Inicio(string inicio, string pass)
+    public IActionResult Inicio()
     {
-        Usuarios user = BD.ObtenerDatosUsuario(inicio);
-
+        Usuario user = Usuario.FromString(HttpContext.Session.GetString("user"));
         return View(user);
     }
 

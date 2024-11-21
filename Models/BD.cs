@@ -8,23 +8,24 @@ static public class BD
 {
     private static string _connectionString = @"Server=localhost; DataBase=Clean IT; Trusted_Connection=True;";
                 
-public static int InsertarUsuario(string usuario, string nombre, string apellido, string email, string telefono, string documento, string contraseña, int idPregunta, string respuestaSeguridad)
+public static int InsertarUsuario(Usuario user, int idPregunta, string respuestaSeguridad)
 {
-    string sql = "exec InsertarUsuario @pEmail, @pUsuario, @pNombre, @pApellido, @pTelefono, @pDocumento, @pContrasenia, @pIdPregunta, @pRespuestaSeguridad";
+    string sql = "exec InsertarUsuario @pEmail, @pUsuario, @pNombre, @pApellido, @pTelefono, @pDocumento, @pContrasenia, @pIdPregunta, @pRespuestaSeguridad, @pFoto";
 
     int resultado;
     using (SqlConnection db = new SqlConnection(_connectionString))
     {
         resultado = db.QueryFirstOrDefault<int>(sql, new {
-            pUsuario = usuario,
-            pNombre = nombre,
-            pApellido = apellido,
-            pEmail = email,
-            pTelefono = telefono,
-            pDocumento = documento,
-            pContrasenia = contraseña,
+            pUsuario = user.Username,
+            pNombre = user.Nombre,
+            pApellido = user.Apellido,
+            pEmail = user.Email,
+            pTelefono = user.Telefono,
+            pDocumento = user.Documento,
+            pContrasenia = user.Contrasenia,
             pIdPregunta = idPregunta,
-            pRespuestaSeguridad = respuestaSeguridad
+            pRespuestaSeguridad = respuestaSeguridad,
+            pFoto = user.Foto
         });
     }
     return resultado;
@@ -102,13 +103,13 @@ public static int InsertarUsuario(string usuario, string nombre, string apellido
         return false;
     }
 
-    public static Usuarios ObtenerDatosUsuario(string inicio)
+    public static Usuario ObtenerDatosUsuario(string inicio)
     {
         string sql = "exec ObtenerDatosUsuario @pInicio";
 
         using (SqlConnection db = new SqlConnection(_connectionString))
         {
-            return db.QueryFirstOrDefault<Usuarios>(sql, new { pInicio = inicio });
+            return db.QueryFirstOrDefault<Usuario>(sql, new { pInicio = inicio });
         }
     }
 
