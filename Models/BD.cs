@@ -6,7 +6,7 @@ namespace Clean_IT.Models;
 
 static public class BD
 {
-    private static string _connectionString = @"Server=localhost; DataBase=Clean IT; Trusted_Connection=True;";
+    private static string _connectionString = @"Server=PC-URI\SQLEXPRESS; DataBase=Clean IT; Trusted_Connection=True;";
                 
 public static int InsertarUsuario(Usuario user, int idPregunta, string respuestaSeguridad)
 {
